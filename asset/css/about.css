@@ -1,0 +1,112 @@
+
+
+#main_title h1{
+    position: absolute;
+    top: 85px; left: -35px;
+    color: white;
+}
+.bigbody{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-direction: column;
+}
+.member{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.member h2{
+    margin-top: 100px;
+   
+    font-size: 40px;
+}
+.memframe{
+    
+    
+    width: 1150px;
+    height: 500px;
+    border-radius: 30px;
+}
+
+.divqa{
+    background-color: rgb(12, 80, 36);
+    width:1150px;
+    border-radius: 30px;
+}
+
+.maildiv{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+.maildiv input{
+    width: 450px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 5px solid;
+    border-radius: 20px;
+}
+
+.qabody{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#problem{
+    border-radius: 30px;
+    width: 650px;
+    height: 300px;
+    padding: 25px;
+    color: black;
+}
+.qabtn{
+    margin-top: 30px;
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    border: none ;
+    color: rgb(12, 80, 36);
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 30px;
+}
+
+.qabody :hover{
+    background-color:transparent;
+    color: white;
+    border: 5px solid white;
+    transition: 1s;
+}
+.contact img{
+    width: 100px;
+    margin: 0 40px;
+}
+.mediadiv{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column
+}
+.contact{
+    display: flex;
+}
+.media{
+    margin: 15px;
+}
+
+.media :hover{
+    transform: scale(1.2,1.2);
+    transition: all 0.5s ease-out;
+}
+
+

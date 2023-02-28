@@ -1,0 +1,164 @@
+*{
+  box-sizing: border-box;
+  color: white;
+}
+div{
+  display: block;
+}
+#main_title h1{
+    position: relative;
+    top: 85px; left: -35px;
+    color: white;
+}
+.big{
+  position: relative !important;
+  top: 150px;
+  left: 350px;
+  background-color:rgb(12, 80, 36);
+  border-radius: 20px;
+  width: 800px;
+  padding: 20px;
+}
+.mid{
+  flex: 1 1 auto;
+}
+.info{
+  justify-content: space-between;
+  display: flex;
+  padding: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.h2card{
+  text-align: center;
+  
+}
+.data{
+  flex: 0 0 auto;
+  width: 50%;
+  margin: 10px 0;
+}
+.pointdiv{
+  width: 50%;
+  background-color: rgba(157, 240, 207, 0.797);
+  border-radius: 10px;
+  height: 80px;
+  margin-top: 20px  ;
+  border: none  ;
+}
+.pointmid{
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-content: center;
+  align-items: stretch;
+}
+.pointdiv p{
+  color: black;
+  font-weight: bold;
+}
+#poitnbtn{
+  background-color: rgba(255, 0, 0, 0.663);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.inputstyle{
+  margin: 10px 0px;
+  padding:10 px;
+  width:90%;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid gainsboro ;
+  background-color:transparent;
+  font-size: 15px;
+  padding-left: 20px;
+  
+}
+#update{
+  background-color: rgba(122, 201, 122, 0.733);
+  border:none;
+  border-radius: 5px;
+  width: 80px;
+  height: 50px;
+  
+}
+
+#update:hover{
+  background-color:rgb(25, 85, 25);
+  border: 2px solid rgba(189, 240, 189, 0.733) ;
+  
+  transition: 1s;
+  cursor: pointer;
+  
+  
+}
+
+.userbottom{
+  display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.midpoint{
+  position: relative;
+  display: flex;
+  background-color: rgba(189, 240, 189, 0.733);
+  border-radius: 40px;
+  border:  solid 8px rgb(90, 150, 90);
+  width: 450px;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: center;
+}
+#close{
+  position: absolute;
+  top:20px;
+  right: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(90, 150, 90);
+  border: 1px solid rgb(25, 85, 25);
+}
+.pointcontent{
+  margin: 10px 20px;
+  padding:0px 15px ;
+  background-color:  rgba(90, 150, 90, 0.885);
+  border-radius: 10px;
+}
+dialog{
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  border: none;
+}
+
+.btndiv{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.btn_update{
+  background-color: rgba(122, 201, 122, 0.733);
+  border:none;
+  border-radius: 5px;
+  width: 80px;
+  height: 50px;
+  margin: 10px;
+}
+
+
+.btn_update:hover{
+  background-color:rgb(25, 85, 25);
+  border: 2px solid rgba(189, 240, 189, 0.733) ;
+  
+  transition: 1s;
+  cursor: pointer;
+  
+  
+}

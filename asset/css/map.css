@@ -1,0 +1,50 @@
+#main_title h1{
+    position: relative;
+    top: 110px; left: -35px;
+}
+
+#map{
+    border-radius: 20px;
+    width: 90%; height: 500px;
+    position: relative; left: 30px;
+}
+
+iframe{
+    border-radius: 20px;
+    width: 1150px; height: 500px; 
+
+}
+
+/****/
+
+.shop{
+    width: 90%; height: 150px;
+    position: relative; left: 30px;top: 30px;
+    border-radius: 20px;
+    border: white 5px solid;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.shop img{
+    position: relative;
+    left: 40px;top: 20px;
+    width: 10%;
+}
+
+.map_detail{
+    position: relative;
+    left: 200px;top: -130px;
+    width: 1000px;
+    font-size: 20px;
+}
+
+.shop:hover{
+    transform: scale(1.1,1.08);
+    transition: all 0.5s ease-out;
+    background-color: rgb(33, 90, 64);
+}
+
+footer{
+    position: relative;top: 80px;
+}

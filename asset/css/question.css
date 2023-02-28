@@ -1,0 +1,100 @@
+ .subtitle2{
+    position: absolute ;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    top:-15px;
+    left: 20px;
+    margin: 0px;
+   
+  }
+ .cls{
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: black;
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    color: white;
+    border-radius: 20px;
+    border: none ;
+}
+
+.confirm{
+    font-size: 30px;
+    position: absolute;
+    top:380px;
+    background-color:  rgba(13, 83, 13, 0.911);
+    border: none;
+    width: 60%;
+    height: 50px;
+    
+    border-radius: 20px;
+}
+.confirmdiv{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 15%;
+    left: 5%;
+    right: 5%;
+}
+.confirmdiv :hover{
+    
+    background-color:white;
+    color: rgba(13, 83, 13, 0.911);
+    border: 5px solid rgba(13, 83, 13, 0.911);
+    
+
+}
+
+.questiondiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.question input[type = "radio"]{
+    display: flex;
+
+}
+
+.question label{
+    color: rgba(13, 83, 13, 0.911) ;
+    font-size: 25px;
+    background-color:rgba(13, 83, 13, 0.444) ;
+    border-radius: 5px;
+    padding: 5px 15px;
+    width: 100%;
+    border: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question label:before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: 3px solid rgba(13, 83, 13, 0.444);
+    border-radius: 50%;
+    margin-right: 20px;
+
+}
+
+.question input[type = "radio"]:checked + label{
+    background-color: white ;
+    color:  rgba(13, 83, 13, 0.911);
+    font-weight: bold;
+}
+.question input[type = "radio"]:checked + label:before{
+    height: 10px;
+    width: 10px;
+    border: 5px solid white;
+    background-color: #01cc65;
+}

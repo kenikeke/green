@@ -1,0 +1,146 @@
+#main_title h1{
+    position: relative;
+    top: 85px; left: -35px;
+    color: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.bighand{
+    position: relative;
+}
+
+.handbook{
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    background-color: rgba(100, 182, 233, 0.818);
+    border-radius: 15px;
+    position: absolute;
+    margin: 60px 0px;
+    left: 35%;
+    top: 50px;
+}
+
+.bar{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+}
+
+.point{
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(192, 187, 187);
+    border-radius: 5px;
+    color: white;
+}
+.barpoint{
+    width: 100%;
+    height: inherit;
+    background-color:rgba(236, 177, 68, 0.832);
+    border-radius: 5px;
+}
+.up{
+    margin: 10px;
+    
+    background-color: rgb(192, 187, 187);
+    border-radius: 5px;
+    color: white;
+}
+.up p{
+    margin-left: 10px;
+}
+.bar1{
+    width: 90%;
+    height: inherit;
+    background-color: rgb(94, 136, 171);
+    border-radius: 5px;
+}
+.die{
+    margin: 10px;
+    
+    background-color:  rgb(192, 187, 187);
+    border-radius: 5px;
+    color: white;
+}
+.die p{
+    margin-left: 10px;
+}
+.bar2{
+    width: 60%;
+    height: inherit;
+    background-color: rgb(81, 94, 104);
+    border-radius: 5px;
+}
+
+.watercan img{
+    position: absolute;
+    width: 100px;
+    left: 25%;
+    top: 250px;
+}
+.seed img{
+    position: absolute;
+    
+    
+    
+    width: 150px;
+    
+    border-radius: 50%;
+    top: 240px;
+    left: 35%;
+    z-index: 1;
+    color: white;
+    
+}
+
+
+.grass .green {
+    position:absolute ;
+    color:rgb(94, 168, 94) ;
+   background-color: rgb(94, 168, 94);
+   left: 0px;
+   width: 100%;
+   border-radius: 10px;
+   bottom: 0px;
+   height: 25%;
+}
+
+.watercan img:hover{
+    position: absolute;
+    bottom: 150px;
+    transform: rotate(30deg);
+    transition: 1s;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.press{
+    position: absolute;
+    right: 0px;
+    top:30%;
+   
+}
+.btn1{
+    background-color: rgba(13, 83, 13, 0.911);
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+.btn1:hover{
+   
+    background-color: rgba(13, 83, 13, 0.612);
+    transform: scale(1.2,1.2);
+    transition: all 0.5s ease-out;
+    color: bisque;
+}

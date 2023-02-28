@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../asset/img/green-power.png" type="image/x-icon" />
+    <title>存碳養綠</title>
+    <style>
+        @import url(../asset/css/main.css);
+        @import url(../asset/css/nav.css);
+        @import url(../asset/css/map.css);
+        @import url(../asset/css/animation.css);
+    </style>
+</head>
+<body>
+    <main>
+        <aside id="main_title">
+            <h1>店家地圖</h1>
+        </aside>
+        <aside id="main_body">
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.359907784382!2d121.23918911480928!3d24.95386668400988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221537961605%3A0x726514471680ef54!2z5b6X5L6G57Sg6JSs6aOf5pep5Y2I6aSQLeS4reWjouS4reWOn-W6lw!5e0!3m2!1szh-TW!2stw!4v1671793598516!5m2!1szh-TW!2stw" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="shop">
+                <img src="../asset/img/location.png" alt="">
+                <div class="map_detail" onclick="click1()">
+                    <h3>得來素蔬食早午餐-中壢中原店</h3>
+                    <p>地址：桃園市中壢區弘揚路77號</p>
+                    <p>電話：034367111</p>    
+                </div>
+            </div>
+            <div class="shop">
+                <img src="../asset/img/location.png" alt="">
+                <div class="map_detail" onclick="click2()">
+                    <h3>圓緣通吃館</h3>
+                    <p>地址：桃園市中壢區環中東路708巷68號</p>
+                    <p>電話：034373033</p>    
+                </div>
+            </div>
+            <div class="shop">
+                <img src="../asset/img/location.png" alt="">
+                <div class="map_detail" onclick="click3()">
+                    <h3>綠野鮮蹤</h3>
+                    <p>地址：桃園市中壢區弘揚路85號</p>
+                    <p>電話：034163090</p>    
+                </div>
+            </div>
+            <div class="shop">
+                <img src="../asset/img/location.png" alt="">
+                <div class="map_detail" onclick="click4()">
+                    <h3>東興蔬食</h3>
+                    <p>地址：桃園市中壢區大仁三街12號</p>
+                    <p>電話：0925001659</p>    
+                </div>
+            </div>
+            <div class="shop">
+                <img src="../asset/img/location.png" alt="">
+                <div class="map_detail" onclick="click5()">
+                    <h3>素怡園素食自助餐</h3>
+                    <p>地址：桃園市中壢區大仁四街20號1樓</p>
+                    <p>電話：034562163</p>    
+                </div>
+            </div>
+            <div class="shop">
+                <img src="../asset/img/location.png" alt="">
+                <div class="map_detail" onclick="click6()">
+                    <h3>吾芳素食</h3>
+                    <p>地址：320桃園市中壢區新中北路124號</p>
+                    <p>電話：0988947869</p>    
+                </div>
+            </div>
+            <div class="shop">
+                <img src="../asset/img/location.png" alt="">
+                <div class="map_detail" onclick="click7()">
+                    <h3>老牌素食水煎包</h3>
+                    <p>地址：桃園市中壢區中北路85-1號</p>
+                    <p>電話：034372756</p>    
+                </div>
+            </div>
+            <div class="shop">
+                <img src="../asset/img/location.png" alt="">
+                <div class="map_detail" onclick="click8()">
+                    <h3>木匠的家公益二手店</h3>
+                    <p>地址：桃園市中壢區中北路二段387號</p>
+                    <p>電話：034683836</p>    
+                </div>
+            </div>
+        
+            
+        </aside>
+    </main>
+    <div id="to_top">
+        <div id="top"></div>
+        <a href="#">
+            <img src="../asset/img/earth-day.png" alt="" id="top_btn">
+        </a>
+    </div>
+    <footer></footer>
+    <iframe src="../page/nav.html" id="navBar" frameborder="0" scrolling="no"></iframe>
+
+    <script>
+        //點即修改地圖*改src裡面的網址就好*
+        function click1(){
+            document.getElementById('map').innerHTML = "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.359907784382!2d121.23918911480928!3d24.95386668400988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221537961605%3A0x726514471680ef54!2z5b6X5L6G57Sg6JSs6aOf5pep5Y2I6aSQLeS4reWjouS4reWOn-W6lw!5e0!3m2!1szh-TW!2stw!4v1671793598516!5m2!1szh-TW!2stw' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>";
+        }
+        function click2(){
+            document.getElementById('map').innerHTML = "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14469.242853010066!2d121.23485688496193!3d24.955541145397227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682214593b75ff%3A0x8f992daa5441e6cd!2z5ZyT57ej6YCa5ZCD6aSo!5e0!3m2!1szh-TW!2stw!4v1671793778195!5m2!1szh-TW!2stw'   loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>";
+        }
+        function click3(){
+            document.getElementById('map').innerHTML = "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14469.437238395689!2d121.2326639849613!3d24.95388704540957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682215391d4d2f%3A0x716b9214e61f2005!2z57ag6YeO6a6u6LmkIChWZWdldGFyaWFuKQ!5e0!3m2!1szh-TW!2stw!4v1671793872836!5m2!1szh-TW!2stw'   loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>";
+        }
+        function click4(){
+            document.getElementById('map').innerHTML = "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14469.294702827403!2d121.23296688496173!3d24.955099945400526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ab3c543f27%3A0xfc0b77394e834ee1!2z5p2x6IiI57Sg6aOfIOahg-WckuW4guS4reWjouWNgOWkp-S7geS4ieihlzEy6Jmf!5e0!3m2!1szh-TW!2stw!4v1671793917921!5m2!1szh-TW!2stw'   loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>";
+        }
+        function click5(){
+            document.getElementById('map').innerHTML = "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14469.195362431386!2d121.23244748496198!3d24.95594524539419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221575586b19%3A0x1611f12fa1ec74c2!2z57Sg5oCh5ZyS57Sg6aOf6Ieq5Yqp6aSQ!5e0!3m2!1szh-TW!2stw!4v1671794090488!5m2!1szh-TW!2stw'   loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>";
+        }
+        function click6(){
+            document.getElementById('map').innerHTML = "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14468.975187599008!2d121.22878518496263!3d24.95781864538016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468223e5cc21d27%3A0xdb316d602a6084ff!2z5ZC-6Iqz57Sg6aOf!5e0!3m2!1szh-TW!2stw!4v1671794134829!5m2!1szh-TW!2stw'   loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>";
+        }
+        function click7(){
+            document.getElementById('map').innerHTML = "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14468.97524745042!2d121.22878518254959!3d24.95781813614061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682325d9fefa6b%3A0x88c37d2ce0bc2ae!2z6ICB54mM57Sg6aOf5rC054WO5YyFLeWOn-aWsOiOiuWci-S4reaXgQ!5e0!3m2!1szh-TW!2stw!4v1671794187082!5m2!1szh-TW!2stw'   loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>";
+        }
+        function click8(){
+            document.getElementById('map').innerHTML = "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14469.41572156945!2d121.22285718496138!3d24.95407014540823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346822473c55ca5f%3A0x873269dc08ab4a92!2z5pyo5Yyg55qE5a625YWs55uK5LqM5omL5bqX!5e0!3m2!1szh-TW!2stw!4v1671794227592!5m2!1szh-TW!2stw'   loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>";
+        }
+    </script>
+
+</body>
+</html>

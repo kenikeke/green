@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../asset/img/green-power.png" type="image/x-icon" />
+    <title>存碳養綠</title>
+    <style>
+        @import url(../asset/css/main.css);
+        @import url(../asset/css/nav.css);
+        @import url(../asset/css/account.css);
+        @import url(../asset/css/animation.css);
+    </style>
+</head>
+<body>
+    <main>
+        <aside id="main_title">
+            <h1>綠色記帳本</h1>
+        </aside>
+        <aside id="main_body">
+            <div id="add">
+                <form   name="myForm">
+                    <h2>日期 ：<input type="date" id="add_date"></h2><br>
+                    <select name="type" id="add_type" onChange="renew(this.selectedIndex);">
+                        <option value="" disabled selected hidden>類別</option>
+                        <option value="Food">食</option>
+                        <option value="Clothing">衣</option>
+                        <option value="Housing">住</option>
+                        <option value="Transportation">行</option>
+                        <option value="Other">其他</option>
+                    </select>
+                    <select name="typeDetail" id="add_type_detail">
+                        <option value="" disabled selected hidden>細項</option>
+                    </select>
+                    <input type="number" id="add_money" placeholder="$ 金額" min="0">
+                    <select name="type" id="add_shop">
+                        <option value="" disabled selected hidden>店家</option>
+                        <option value="">獨立商店</option>
+                        <option value="">連鎖商店</option>
+                        <option value="">便利商店_負碳商品專區</option>
+                        <option value="">便利商店_一般</option>
+                        <option value="">綠色商店</option>
+                        <option value="">其他</option>
+                       
+                    </select>
+                    <script>
+                        department=new Array();
+                        department[0]=[];	
+                        department[1]=["素食", "非素食"];	
+                        department[2]=[];
+                        department[3]=["水費/月","電費/月","瓦斯費/月"];
+                        department[4]=["自駕油費", "捷運", "公車", "鐵路", "長程飛機", "短程飛機"];
+                        department[5]=["具有綠色標章", "非綠色標章"];
+
+                        function renew(index){
+                            for(var i=0;i<department[index].length;i++)
+                                document.myForm.typeDetail.options[i]=new Option(department[index][i], department[index][i]);	// 設定新選項
+                            document.myForm.typeDetail.length=department[index].length;	// 刪除多餘的選項
+                        }
+                    </script>
+                    <input type="number" id="add_unit" placeholder="單位" min="0" title="火車公里/公車、捷運站數/份數/飛機次數/加油公升數/水、電、瓦斯度數">
+                    <button type="submit" id="add_btn" onclick="addFunction()" >新增</button><br>
+                    <script>
+                        function addFunction()
+                        {
+                            alert("此紀錄碳足跡量已超標!! \n 未來您的孫子沒有家了哭哭 °(°ˊДˋ°) °");
+                        }
+                    </script>
+                    <select name="type" id="add_buy">
+                        <option value="">自行到店</option>
+                        <option value="">網購</option>
+                    </select>
+                    <input type="text" placeholder="品名" id="productName">
+                </form>
+            </div>
+            <div id="today">
+                <p>本日消費金額：</p>
+                    <p>500</p>
+                    <p>元 碳排量：</p>
+                    <p>460</p>
+                    <p>kg 碳排量指標 </p>
+                    <p>普通</p>
+                    <button type="submit" onclick="show()">
+                        已省下碳排量 <br>
+                        500
+                    </button>
+                <script>
+                    function show(){
+                        window.prompt("輸入贈與人會員編號")
+                    }
+                </script>
+            </div>
+            <div class="data">
+                <section id="data_detail">
+                    <div id="date_Range">
+                        <form action="">
+                            <input type="date" class="Range_1">
+                            <p>~</p>
+                            <input type="date" class="Range_2">
+                            <button type="submit" id="Range_btn">GO</button>
+                        </form>
+                    </div>
+                </section>
+                <section id="data_chart">
+                    <div id="chart_title">
+                        <p>顯示圖表</p>
+                    </div>
+                    <div id="data_chart_show">
+                        
+                    </div>
+                </section>
+                <section id="data_record">
+                    <div id="record_title">
+                        <p id="record_data1">2021/12/25</p>
+                        <p >～</p>
+                        <p id="record_data2">2022/12/26</p>
+                    </div>
+                    <!---->
+                    <div class="record_content_area">
+                        <div class="record_content_area_1">
+                            <table class="record_content" border="1">
+                                <caption>
+                                    2021/12/25(日)
+                                    <button class="change" onclick="deleteFunction()">刪除</button>
+                                </caption>
+                                <tr>
+                                    <td >
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>1.</td>
+                                    <td>奶茶</td>
+                                    <td>店家名</td>
+                                    <td>單位</td>
+                                    <td>金額：45元</td>
+                                    <td>碳足跡：140kg</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>2.</td>
+                                    <td>三明治</td>
+                                    <td>店家名</td>
+                                    <td>單位</td>
+                                    <td>金額：25元</td>
+                                    <td>碳足跡：100kg</td>
+                                </tr>
+                            </table>
+    
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+                
+                    <script>
+                        function deleteFunction()
+                        {
+                            y = confirm("請注意！刪除紀錄將扣除一點！")
+                            if(y==true)
+                                alert("已扣點 ( ´; ω ; )")
+                        }
+                    </script>
+                    
+                    </div>
+                    <div id="record_sum" >
+                        <table>
+                            <tr>
+                                <td>總計　</td>
+                                <td>金額：　</td>
+                                <td>120</td>
+                                <td>元　碳足跡：　</td>
+                                <td id="record_sum_g">460</td>
+                                <td>　kg</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </aside>
+    </main>
+    <div id="to_top">
+        <div id="top"></div>
+        <a href="#">
+            <img src="../asset/img/earth-day.png" alt="" id="top_btn">
+        </a>
+    </div>
+
+    <footer></footer>
+    <iframe src="../page/nav.html" id="navBar" frameborder="0" scrolling="no"></iframe>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(62, 136, 91);
+    font-family: NSimSun;
+    padding: 30px 30px 30px 30px;
+}
+
+#navBar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    margin: auto;
+    left: 0;right: 0;top: 0;
+}
+
+
+main{
+    height: auto;
+}
+
+#main_title{
+    width: 100px; height: 550px;
+    position: fixed;
+    top: 100px; 
+    writing-mode: vertical-lr;
+    font-size: 40px;
+    letter-spacing: 15px;
+}
+
+#main_body{
+    position: relative;
+    width: 1280px; height: auto;
+    top: 80px; left: 130px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+footer{
+    margin-top: 50px;
+    height: 50px; width: 100%;
+
+}
+
+#top{
+    position: fixed;
+    top: 0;
+}
+
+#top_btn{
+    position: fixed;
+    top: 600px; left: 1400px;
+    width: 6%;
+    opacity: 0.5;
+}
+
+#top_btn:hover{
+    animation: rotate 1.5s linear infinite ;
+    transform: 0.5s;
+    opacity: 1;
+}

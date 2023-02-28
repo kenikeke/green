@@ -1,0 +1,93 @@
+#main_title h1{
+    position: relative;
+    top: 110px; left: -35px;
+}
+
+section.goods_aera{
+    display: flex;
+    width: 1250px;
+    margin-top: 20px;
+    align-items: center;
+    height: auto;
+}
+
+
+div.goods{
+    width: 250px;height: 350px;
+    text-align: center;
+    border: white 2px solid;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 0 30px 40px;
+}
+
+div.goods p{
+    font-family: "微軟正黑體";
+    font-size: 25px;
+
+}
+
+div .goods_img{
+    width: 200px;height: 200px;
+    position: relative;top: -15px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.goods_img p{
+    display: inline;
+    position: relative;top: 70px;
+}
+
+div.goods img{
+    width: 200px;height: 200px;
+    position: relative;top: -35px;
+}
+
+.goods_btn{
+    color: black;
+    font-size: 20px;
+    width: 100px; height: 40px;
+    border-radius: 10px;
+    border: #FFFFCE;
+    letter-spacing: 2px;
+}
+
+.goods_btn:hover{
+    transform: scale(1.2,1.2);
+    transition: all 0.5s ease-out;
+    background-color: tomato;
+    color: white;
+}
+
+.goods:hover{
+    transform: scale(1.1,1.1);
+    transition: all 1s ease-out;
+    border: white 5px solid;
+    border-radius: 20px;
+    background-color: #3c7058;
+
+}
+
+.goods_img img:hover{
+    opacity: 0.5;
+}
+
+
+/***/
+#have{
+    position: relative;top: 10px;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+#have p{
+    display: inline;
+}
+
+footer{
+    position: relative;top: 80px;
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(../asset/css/account.css);
+    </style>
+</head>
+<body>
+    <table class="record_content" border="1">
+        <caption>
+            2021/12/25(日)
+            <button class="change" onclick="deleteFunction()">刪除</button>
+        </caption>
+        <tr>
+            <td >
+                <input type="checkbox">
+            </td>
+            <td>1.</td>
+            <td>奶茶</td>
+            <td>店家名</td>
+            <td>單位</td>
+            <td>金額：45元</td>
+            <td>碳足跡：140kg</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>2.</td>
+            <td>三明治</td>
+            <td>店家名</td>
+            <td>單位</td>
+            <td>金額：25元</td>
+            <td>碳足跡：100kg</td>
+        </tr>
+    </table>
+
+    <script>
+        function deleteFunction()
+        {
+            y = confirm("請注意！刪除紀錄將扣除一點！")
+            if(y==true)
+                alert("已扣點 ( ´; ω ; )")
+        }
+    </script>
+</body>
+</html>
