@@ -51,6 +51,9 @@
     padding: 20px 30px;
     margin: 10px;
   }
+  a {
+    text-decoration: none;
+  }
   .outer  :hover{
     background-color: rgb(12, 80, 36);
     transform: scale(1.1,1.1);

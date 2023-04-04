@@ -1,0 +1,45 @@
+.big{
+    display: flex;
+    justify-content: center;
+}
+.in1{
+    width: 500px;
+    border: 10px solid;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    animation: upndown 10s infinite;
+    animation-timing-function: linear;
+    transition: 0.5s;
+}
+
+.in1:hover{
+    
+    background-color: rgb(46, 44, 44);
+    color: aliceblue;
+}
+@keyframes upndown {
+    0%   {top:0px;}
+    50%  {top:500px;}
+
+    100% {top:0px;}
+  }
+body{
+    background-color: rgb(62, 136, 91) ;
+}
+a{
+    text-decoration: none;
+  
+    
+
+}
+.home a{
+    position: relative;
+    top: 100px;
+    padding: 20px;
+    background-color: aliceblue;
+    border: 10px solid;
+}
